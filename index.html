@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amora Ventures | Sulfuric Acid Plant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>AMORA VENTURES</h1>
+        <h2>Sulfuric Acid Plant Design</h2>
+        <p>1000 TPD Industrial Contact Process – Complete Technical & Economic Study</p>
+        <a href="#introduction" class="btn">Explore Full Report ↓</a>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="introduction" class="section light">
+    <h2>1. Introduction</h2>
+    <p>
+    Sulfuric acid (H₂SO₄) is one of the most important industrial chemicals worldwide. 
+    It is widely used in fertilizer production, petroleum refining, mineral processing, 
+    chemical manufacturing, and wastewater treatment. The production capacity of sulfuric 
+    acid is often considered an indicator of industrial development.
+    </p>
+
+    <p>
+    This project presents the detailed engineering design of a 1000 ton per day sulfuric acid 
+    plant using the Contact Process with 98% efficiency. The study covers process description, 
+    stoichiometric calculations, equipment selection, capital cost estimation, operational cost 
+    evaluation, and economic feasibility analysis.
+    </p>
+</section>
+
+<!-- PROCESS DESCRIPTION -->
+<section class="section dark">
+    <h2>2. Overall Process Description</h2>
+
+    <p>
+    The production of sulfuric acid in this plant follows the modern double absorption 
+    contact process. The process consists of five major stages:
+    </p>
+
+    <ul>
+        <li>Sulfur Burning (SO₂ generation)</li>
+        <li>Gas Cleaning and Drying</li>
+        <li>Catalytic Oxidation of SO₂ to SO₃</li>
+        <li>Absorption of SO₃ to form Oleum</li>
+        <li>Dilution to obtain commercial H₂SO₄</li>
+    </ul>
+
+    <p>
+    Each stage is designed to maximize conversion efficiency while maintaining safe and 
+    stable operating conditions.
+    </p>
+</section>
+
+<!-- UNIT 1 -->
+<section class="section light">
+    <h2>3. Unit 1 – Sulfur Burning Furnace (F-101)</h2>
+
+    <h3>3.1 Process Description</h3>
+    <p>
+    Molten sulfur is combusted in dry air inside a refractory-lined furnace.
+    The combustion produces sulfur dioxide (SO₂) gas in a highly exothermic reaction.
+    </p>
+
+    <div class="highlight-box">
+        S + O₂ → SO₂
+    </div>
+
+    <h3>3.2 Operating Conditions</h3>
+    <table>
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>Temperature</td><td>900 – 1100 °C</td></tr>
+        <tr><td>Pressure</td><td>~1 atm</td></tr>
+        <tr><td>Efficiency</td><td>98%</td></tr>
+    </table>
+
+    <h3>3.3 Stoichiometry per Day (1000 TPD Basis)</h3>
+    <table>
+        <tr><th>Material</th><th>Requirement (ton/day)</th></tr>
+        <tr><td>Sulfur (S)</td><td>181</td></tr>
+        <tr><td>Oxygen (O₂)</td><td>266.98</td></tr>
+        <tr><td>Air Supply</td><td>1150.3</td></tr>
+    </table>
+
+    <h3>3.4 Side Reactions</h3>
+    <ul>
+        <li>2S + 3O₂ → 2SO₃ (minor formation)</li>
+        <li>SO₃ + H₂O → H₂SO₄ (acid mist formation)</li>
+    </ul>
+
+    <h3>3.5 Machine Selection</h3>
+    <div class="machine-box">
+        Equipment Code: F-101<br>
+        Sulfur Burning Furnace Package<br>
+        Cost: Rp 26,000,000,000
+    </div>
+
+    <h3>3.6 Notes</h3>
+    <p>
+    Moisture in combustion air may lead to acid mist formation.
+    Dust contamination can damage downstream catalyst.
+    </p>
+</section>
+
+<!-- FINANCIAL SUMMARY -->
+<section class="section dark">
+    <h2>10. Economic Feasibility Summary</h2>
+
+    <div class="grid">
+        <div class="card">
+            Revenue<br><strong>Rp 660 Billion / year</strong>
+        </div>
+        <div class="card">
+            Production Cost<br><strong>Rp 538.8 Billion / year</strong>
+        </div>
+        <div class="card">
+            Net Profit<br><strong>Rp 94.5 Billion / year</strong>
+        </div>
+        <div class="card">
+            Payback Period<br><strong>10.3 Years</strong>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="bepChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="cashChart"></canvas>
+    </div>
+</section>
+
+<footer>
+© 2026 Amora Ventures – Industrial Sulfuric Acid Plant Design
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
